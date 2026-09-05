@@ -1,0 +1,74 @@
+{
+  "baseline": {
+    "total_transactions": 1200,
+    "total_at_risk_revenue": 5620197.01,
+    "recovered_revenue": 2084060.68,
+    "recovery_rate": 0.3458,
+    "action_distribution": {
+      "reminder": 311,
+      "delayed_retry": 653,
+      "stop_recovery": 236
+    },
+    "unnecessary_retries": 549,
+    "stopped_count": 236,
+    "average_recovery_time_minutes": 723.24,
+    "unnecessary_retry_rate": 0.4575,
+    "messages_per_recovered_payment": 0.7494,
+    "cost_per_recovery_inr": 3.5217,
+    "human_escalation_rate": 0.0,
+    "false_positive_decision_rate": 0.0483,
+    "policy_violation_count": 0,
+    "cost_assumptions": {
+      "retry_cost_inr": 2.0,
+      "message_cost_inr": 0.5,
+      "human_review_cost_inr": 50.0
+    },
+    "decision_latency": {
+      "sample_size": 200,
+      "avg_decision_latency_ms": 0.0003
+    }
+  },
+  "payback_ai": {
+    "total_transactions": 1200,
+    "total_at_risk_revenue": 5620197.01,
+    "recovered_revenue": 1834544.83,
+    "recovery_rate": 0.2958,
+    "action_distribution": {
+      "human_escalation": 110,
+      "alternate_payment_link": 153,
+      "delayed_retry": 407,
+      "reminder": 211,
+      "stop_recovery": 319
+    },
+    "status_distribution": {
+      "not_recovered": 394,
+      "human_rejected": 33,
+      "recovered": 355,
+      "customer_ignored": 99,
+      "skipped": 319
+    },
+    "unnecessary_retries": 245,
+    "average_recovery_time_minutes": 720.3,
+    "unnecessary_retry_rate": 0.2042,
+    "messages_per_recovered_payment": 0.5944,
+    "cost_per_recovery_inr": 18.0831,
+    "human_escalation_rate": 0.0917,
+    "false_positive_decision_rate": 0.065,
+    "policy_violation_count": 4,
+    "cost_assumptions": {
+      "retry_cost_inr": 2.0,
+      "message_cost_inr": 0.5,
+      "human_review_cost_inr": 50.0
+    },
+    "decision_latency": {
+      "sample_size": 200,
+      "avg_decision_latency_ms": 0.2576
+    }
+  },
+  "cost_assumptions": {
+    "retry_cost_inr": 2.0,
+    "message_cost_inr": 0.5,
+    "human_review_cost_inr": 50.0
+  },
+  "data_note": "All figures are SIMULATED outcomes computed on SYNTHETIC data. Not representative of real-world Razorpay performance."
+}
