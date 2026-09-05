@@ -5,13 +5,6 @@ Reads directly from the SQLite database built by the core/ pipeline
 (no FastAPI dependency needed to run this - simpler for a prototype).
 Everything shown here is SYNTHETIC DATA and SIMULATED OUTCOMES.
 """
-"""
-PayBack AI - Streamlit dashboard.
-
-Reads directly from the SQLite database built by the core/ pipeline
-(no FastAPI dependency needed to run this - simpler for a prototype).
-Everything shown here is SYNTHETIC DATA and SIMULATED OUTCOMES.
-"""
 from __future__ import annotations
 
 import os
@@ -35,6 +28,7 @@ from core.simulator import compute_payback_ai_metrics
 from core.whatif import run_what_if_from_db
 
 st.set_page_config(page_title="PayBack AI", layout="wide")
+
 
 # --- data access helpers ---------------------------------------------------
 
